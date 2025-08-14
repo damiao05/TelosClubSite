@@ -3,6 +3,11 @@
   --accent: #A8D5A2; /* verde claro */
   --muted: #F3F7F2;
   --text: #0d0f10;
+
+  --font-size-base: 18px;
+  --font-size-peq: 12px;
+
+  --font-weight-bold: 600;
 }
 * {
   box-sizing: border-box;
@@ -13,10 +18,36 @@ body {
   color: var(--text);
   background: #fff;
 }
+.input-email {
+  border-radius: 1rem;
+  border-width: thin;
+  border-color: 1px solid #eef1ee;
+  padding: 10 16px;
+  width: 20rem;
+}
+.input-email:focus {
+  border-color: #eef1ee;
+  border-width: thin;
+}
 .container {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.text-primary {
+  color: var(--primary);
+}
+.text-center {
+  text-align: center;
+}
+.font-s-18 {
+  font-size: var(--font-size-base);
+}
+.font-s-12 {
+  font-size: var(--font-size-peq);
+}
+.font-w-600 {
+  font-weight: var(--font-weight-bold);
 }
 .btn {
   display: inline-flex;
@@ -150,6 +181,11 @@ h1 {
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.cards-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 .card {
